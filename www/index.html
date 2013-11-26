@@ -11,9 +11,8 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-          <div data-role="page">
-            <div data-role="header">
+          <div data-role="page" id="intro">
+            <div data-role="header" data-id="navbar">
               <h1>My Title</h1>
             </div><!-- /header -->
  
@@ -21,19 +20,58 @@
               <p>Hello world</p>
             </div><!-- /content -->
  
-            <div data-role="footer">
-              <div data-role="navbar" data-position="fixed">
+            <div data-role="footer" data-position="fixed" data-id="tabbar">
+              <div data-role="navbar">
                 <ul>
-                  <li><a href="#">One</a></li>
-                  <li><a href="#">Two</a></li>
-                  <li><a href="#">Three</a></li>
+                  <li><a href="#intro" class="ui-btn-active ui-state-persist">Intro</a></li>
+                  <li><a href="#moreinfo">More Info</a></li>
+                  <li><a href="#vegetables">Vegetables</a></li>
                 </ul>
               </div>
             </div><!-- /footer -->
- 
-          </div><!-- /page -->
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
+          </div><!-- /into page -->
+
+          <div data-role="page" id="moreinfo">
+            <div data-role="header" data-id="navbar">
+              <h1>More Info</h1>
+            </div><!-- /header -->
+
+            <div data-role="content">
+              <p>Hello world</p>
+            </div><!-- /content -->
+
+            <div data-role="footer" data-position="fixed" data-id="tabbar">
+              <div data-role="navbar">
+                <ul>
+                  <li><a href="#intro" class="ui-btn-active ui-state-persist">Intro</a></li>
+                  <li><a href="#moreinfo">More Info</a></li>
+                  <li><a href="#vegetables">Vegetables</a></li>
+                </ul>
+              </div>
+            </div><!-- /footer -->
+          </div><!-- /more info page -->
+
+          <div data-role="page" id="vegetables">
+            <div data-role="header" data-id="navbar">
+              <h1>Vegetables</h1>
+            </div><!-- /header -->
+
+            <div data-role="content">
+              <p>Hello world</p>
+            </div><!-- /content -->
+
+            <div data-role="footer" data-position="fixed" data-id="tabbar">
+              <div data-role="navbar">
+                <ul>
+                  <li><a href="#intro" class="ui-btn-active ui-state-persist">Intro</a></li>
+                  <li><a href="#moreinfo">More Info</a></li>
+                  <li><a href="#vegetables">Vegetables</a></li>
+                </ul>
+              </div>
+            </div><!-- /footer -->
+          </div><!-- /more info page -->
+
+        <!-- script type="text/javascript" src="phonegap.js"></script -->
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
